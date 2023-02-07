@@ -1,0 +1,9 @@
+extends base
+
+block message_content
+  .received__messages.u-margin-top-sm
+    each message in messages
+      .received__message
+        p.received__message--text= message.message
+
+  include _formMessage

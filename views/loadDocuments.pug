@@ -1,0 +1,21 @@
+extends base
+
+block document_content
+  .received__items
+    each doc in documents
+      .received__item
+        .received__file-type
+          ion-icon.received__icon-type(name='document-outline')
+          p.received__icon-type--text= doc.type
+
+        .received__file-info-extra
+          - const sentAt = doc.sentAt.toLocaleString('en-us', {month: 'long', year:'numeric'})
+          p.received__file-sent-at= sentAt
+          p.received__by= doc.sender
+
+        .received__file-info
+          a.received__link(href=`/user-files/${currentUser}/${doc.slug}`)
+            ion-icon.received__icon-info(name='information-outline')
+
+        .received__file-download
+          ion-icon.received__icon-download(name='download-outline')

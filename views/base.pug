@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    script(defer type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(defer nomodule src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Sofia+Sans:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+
+    link(rel='stylesheet' href='/css/style.css')
+    title FileShare &mdash; Share anything
+  
+  body
+    header.header
+      h3.header__head-text FileSharer
+
+      nav.nav
+        ul.nav__ul
+          li.nav__li
+            a.nav__link(href=`/`) Home
+          li.nav__li
+            a.nav__link(href='/how-it-works') How it works ?
+          li.nav__li
+            a.nav__link(href='/signUp') Sign in
+
+    section.section-main
+      .main
+        .main__one
+          .send
+            .send__text Send
+            .send__info Share files with anyone with ease.
+
+          .task-box
+
+            a.task-box__link.task-box__link--1.change-form-doc-link(href='#') send files
+
+            .send__form.send__form--document
+              //- form document
+              include _formDocument 
+
+        
+        .main__two
+          .received-head
+            p.received__text Received
+            p.received__info All Received files.
+
+          .received
+            a.task-box__link.task-box__link--1(href=`/user-files/${currentUser}`) files
+
+            a.task-box__link.task-box__link--2(href=`/user-messages/${currentUser}`) messages
+
+            //- items
+            block document_content
+
+            //- messages
+            block message_content
+
+    block fileDetails_content
+
+    block signUp_content
+
+    block logIn_content
+
+    script(src='/js/bundle.js')

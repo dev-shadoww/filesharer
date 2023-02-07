@@ -1,0 +1,35 @@
+extends base
+
+block fileDetails_content
+  section.section-file-details.section-file-details--relative
+    .file-details
+      h3.file-details__text File details
+
+      .file-details__details
+        .file-details__detail
+          p.file-details__detail--head &gt; Sent By
+          p.file-details__detail--sub= document.sender
+
+        .file-details__detail
+          p.file-details__detail--head &gt; file name
+          p.file-details__detail--sub= document.name
+
+        .file-details__detail
+          p.file-details__detail--head &gt; file location
+          p.file-details__detail--sub= document.locationOfFile
+
+        .file-details__detail
+          p.file-details__detail--head &gt; file size
+          p.file-details__detail--sub 10 MB
+
+        .file-details__detail
+          p.file-details__detail--head &gt; file Type
+          p.file-details__detail--sub.file-details__detail--sub-type= document.type
+
+        .file-details__detail
+          p.file-details__detail--head &gt; compression type
+          p.file-details__detail--sub.file-details__detail--sub-compression= document.compressionType
+
+        .file-details__detail
+          p.file-details__detail--head &gt; message
+          p.file-details__detail--sub= document.message

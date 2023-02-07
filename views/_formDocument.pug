@@ -1,0 +1,44 @@
+form.form.form__document-send(action='#')
+  .form__all-boxes
+    .form__boxes
+      label.form__label(for='userName') &gt; username
+      input.form__input.form__input--username.form__input--sender(type='text' id='userName')
+      p.form__check-user &check;
+
+    .form__boxes
+      label.form__label(for='sendTo') &gt; Send to
+      input.form__input.form__input--username.form__input--receiver(type='text' id='sendTo')
+      p.form__check-user &check;
+
+    .form__boxes
+      label.form__label(for='fileName') &gt; filename
+      input.form__input.form__input--name(type='text' id='fileName')
+
+    .form__boxes.form__boxes--btn
+      label.form__label(for='fileUpload') &gt; Upload
+      input.form__file-upload-btn(type='file')
+      button.form__btn Upload
+
+    .form__boxes.form__boxes--btn
+      label.form__label(for='fileLocation') &gt; location
+      input.form__input.form__input--location(type='text' id='fileLocation')
+
+    .form__boxes.form__boxes--btn
+      label.form__label(for='fileType') &gt; file type
+      .form__file-types
+        a.form__file-type.form__file-type--1(href='#') .txt
+        a.form__file-type.form__file-type--2(href='#') .jpeg
+        a.form__file-type.form__file-type--3(href='#') .png
+
+    .form__boxes
+      label.form__label(for='compressionType') &gt; compression Type
+      .form__file-types
+        a.form__compression-type.form__compression-type--1(href='#') gzip
+        a.form__compression-type.form__compression-type--2(href='#') rar
+        a.form__compression-type.form__compression-type--3(href='#') zip
+
+    .form__boxes.form__boxes--message 
+      label.form__label(for='fileMessage') &gt; message
+      input.form__input.form__input--message-file(type='text' id='fileMessage')
+    
+  button.send-btn.send-btn__document  send

@@ -1,0 +1,33 @@
+.how-it-works-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 4rem;
+}
+
+.how-it-works {
+  max-width: 100rem;
+  height: 50rem;
+  background-color: $color-white;
+  padding: 2rem 4rem;
+
+  border-radius: 11px;
+
+  &__text-head {
+    font-size: 3.4rem;
+    color: $color-black;
+    margin-top: 3.2rem;
+  }
+
+  &__text-sub {
+    font-size: 1.8rem;
+    color: $color-black;
+  }
+
+  &__img {
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+}

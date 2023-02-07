@@ -1,0 +1,273 @@
+.send {
+  &__text {
+    display: inline-block;
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $color-green-var-3;
+  }
+
+  &__info {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+}
+
+.form {
+  margin-top: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__all-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.6rem;
+    column-gap: 2rem;
+
+    align-self: flex-start;
+  }
+
+  &__label {
+    display: block;
+    margin-top: 0.6rem;
+    color: rgba($color-blue-var-dark-1, 0.98);
+
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    margin-top: 0.6rem;
+    padding: 0.4rem 0 0.4rem 0.8rem;
+    color: $color-blue-var-dark-1;
+    width: 80%;
+
+    border: 0;
+    border: 1.8px solid rgba($color-blue-var-dark-1, 0.8);
+    border-radius: 55px;
+    font-family: 'Roboto Mono', monospace;
+
+    &:focus {
+      outline: none;
+    }
+
+    &--size {
+      width: 40%;
+      display: inline-block;
+    }
+  }
+
+  &__check-user {
+    font-size: 1.8rem;
+    background-color: $color-green-var-3;
+    color: $color-white;
+    display: inline-block;
+    border-radius: 55px;
+    padding: 0.2rem 0.6rem;
+    margin-left: 1rem;
+  }
+
+  &__textarea {
+    margin-top: 0.6rem;
+    padding: 0.2rem 0.4rem;
+    color: $color-blue-var-dark-1;
+
+    border: 0;
+    border: 1.4px solid rgba($color-blue-var-dark-1, 0.8);
+    border-radius: 2px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__select {
+    margin-top: 0.6rem;
+    color: $color-blue-var-dark-1;
+
+    font-size: 2rem;
+    padding: 0 2rem;
+    background-color: $color-white;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__file-sizes {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    display: inline-block;
+    margin-left: 1.2rem;
+  }
+
+  &__file-size {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.8rem;
+    padding: 0.2rem 1.4rem;
+    border-radius: 55px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &--1 {
+      background-color: $color-green-var-2;
+    }
+
+    &--2 {
+      background-color: $color-green-var-1;
+    }
+  }
+
+  &__file-types {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__file-type {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.8rem;
+    padding: 0.2rem 1.4rem;
+    border-radius: 55px;
+    font-weight: 600;
+    text-transform: lowercase;
+
+    &--1 {
+      background-color: $color-green-var-2;
+    }
+
+    &--2 {
+      background-color: $color-green-var-1;
+    }
+
+    &--3 {
+      background-color: $color-blue-var-dark-2;
+    }
+  }
+
+  &__compression-types {
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__compression-type {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 1.8rem;
+    padding: 0.2rem 1.4rem;
+    border-radius: 55px;
+    font-weight: 600;
+    text-transform: lowercase;
+
+    &--1 {
+      background-color: $color-blue-var-2;
+    }
+
+    &--2 {
+      background-color: $color-green-var-3;
+    }
+
+    &--3 {
+      background-color: $color-blue-var-1;
+    }
+  }
+
+  &__file-upload-btn {
+    position: absolute;
+    opacity: 0;
+
+    margin: 0.6rem 0;
+    margin-top: 0.8rem;
+
+    border: 0;
+    border: 1.4px solid rgba($color-blue-var-dark-1, 0.8);
+    border-radius: 2px;
+
+    box-shadow: 0 0.4rem 0.2rem rgba($color-black, 0.2);
+
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: $color-blue-var-dark-1;
+    text-transform: capitalize;
+    padding: 0.4rem 2rem;
+    border-radius: 55px;
+    background-color: $color-white;
+
+    background-color: $color-blue-var-dark-3;
+    color: $color-white;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+  }
+
+  &__btn {
+    margin: 0.6rem 0;
+
+    border: 0;
+    border: 1.4px solid rgba($color-blue-var-dark-1, 0.8);
+    border-radius: 2px;
+
+    box-shadow: 0 0.4rem 0.2rem rgba($color-black, 0.2);
+
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $color-blue-var-dark-1;
+    text-transform: capitalize;
+    padding: 0 2rem;
+    border-radius: 55px;
+    background-color: $color-white;
+
+    background-color: $color-blue-var-dark-3;
+    color: $color-white;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+  }
+
+  &__boxes {
+    &--message {
+      grid-column: 1 / 3;
+      grid-row: 5 / 5;
+    }
+  }
+}
+
+.send-btn {
+  border: 0;
+  border: 1.4px solid rgba($color-blue-var-dark-1, 0.8);
+  border-radius: 2px;
+  color: $color-white;
+
+  box-shadow: 0 0.4rem 0.2rem rgba($color-black, 0.2);
+
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  padding: 0 2rem;
+  border-radius: 55px;
+  background-color: $color-blue-var-dark-1;
+
+  margin-top: 1.4rem;
+  font-family: 'Roboto Mono', monospace;
+  cursor: pointer;
+
+  // &__document {
+  //   grid-column: 1 / 3;
+  //   grid-row: 6 / 6;
+  // }
+
+  // &__message {
+  //   grid-column: 1 / 3;
+  //   grid-row: 6 / 5;
+  // }
+
+  align-self: flex-start;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      defer
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Sofia+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>FileShare &mdash; Share anything</title>
+  </head>
+  <body>
+    <header class="header">
+      <h3 class="header__head-text">FileSharer</h3>
+
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__li">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__li">
+            <a href="#" class="nav__link">How it works ?</a>
+          </li>
+          <li class="nav__li">
+            <a href="#" class="nav__link">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section-main u-display-hide">
+      <div class="main">
+        <div class="main__one">
+          <div class="send">
+            <p class="send__text">Send</p>
+            <p class="send__info">Share files with anyone with ease.</p>
+          </div>
+
+          <div class="task-box">
+            <a
+              href="#"
+              class="task-box__link task-box__link--1 change-form-doc-link"
+              >send files</a
+            >
+
+            <!-- SEND FORM DOCUMENT -->
+            <div class="send__form send__form--document">
+              <form action="#" class="form">
+                <div class="form__all-boxes">
+                  <div class="form__boxes">
+                    <label for="userName" class="form__label"
+                      >&gt; username</label
+                    >
+                    <input
+                      type="text"
+                      class="form__input form__input--username form__input--sender"
+                      id="userName"
+                    />
+                    <p class="form__check-user">&check;</p>
+                  </div>
+
+                  <div class="form__boxes">
+                    <label for="userName" class="form__label"
+                      >&gt; Send to</label
+                    >
+                    <input
+                      type="text"
+                      class="form__input form__input--username form__input--receiver"
+                      id="userName"
+                    />
+                    <p class="form__check-user">&check;</p>
+                  </div>
+
+                  <div class="form__boxes">
+                    <label for="fileName" class="form__label"
+                      >&gt; filename</label
+                    >
+                    <input
+                      type="text"
+                      class="form__input form__input--name"
+                      id="fileName"
+                    />
+                  </div>
+
+                  <div class="form__boxes form__boxes--btn">
+                    <label for="fileupload" class="form__label"
+                      >&gt; Upload</label
+                    >
+                    <input type="file" class="form__file-upload-btn" />
+                    <button class="form__btn">Upload</button>
+                  </div>
+
+                  <div class="form__boxes">
+                    <label for="fileLocation" class="form__label"
+                      >&gt; location</label
+                    >
+                    <input
+                      type="url"
+                      class="form__input form__input--location"
+                      id="fileLocation"
+                    />
+                  </div>
+
+                  <div class="form__boxes">
+                    <label for="fileType" class="form__label"
+                      >&gt; file type</label
+                    >
+                    <div class="form__file-types">
+                      <a href="#" class="form__file-type form__file-type--1"
+                        >.txt</a
+                      >
+                      <a href="#" class="form__file-type form__file-type--2"
+                        >.jpeg</a
+                      >
+                      <a href="#" class="form__file-type form__file-type--3"
+                        >.png</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form__boxes">
+                    <label for="compressionType" class="form__label"
+                      >&gt; compression Type</label
+                    >
+                    <div class="form__compression-types">
+                      <a
+                        href="#"
+                        class="form__compression-type form__compression-type--1"
+                        >gzip</a
+                      >
+                      <a
+                        href="#"
+                        class="form__compression-type form__compression-type--2"
+                        >rar</a
+                      >
+                      <a
+                        href="#"
+                        class="form__compression-type form__compression-type--3"
+                        >zip</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="form__boxes form__boxes--message">
+                    <label for="fileMessage" class="form__label"
+                      >&gt; message</label
+                    >
+                    <input
+                      type="text"
+                      class="form__input form__input--message-file"
+                      id="fileMessage"
+                    />
+                  </div>
+                </div>
+
+                <button class="send-btn">send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="main__two">
+          <div class="received-head">
+            <p class="received__text">Received</p>
+            <p class="received__info">All Received files.</p>
+          </div>
+
+          <div class="received">
+            <a href="#" class="task-box__link task-box__link--1">files</a>
+
+            <a href="#" class="task-box__link task-box__link--2">messages</a>
+
+            <!-- RECEIVED FILES -->
+            <div class="received__items u-display-hide">
+              <div class="received__item">
+                <div class="received__file-type">
+                  <ion-icon
+                    class="received__icon-type"
+                    name="document-outline"
+                  ></ion-icon>
+                  <p class="received__icon-type--text">.jpeg</p>
+                </div>
+
+                <div class="received__file-info-extra">
+                  <p class="received__file-sent-at">20-12-21</p>
+                  <p class="received__by">anonymous</p>
+                </div>
+
+                <div class="received__file-info">
+                  <a href="#" class="received__link">
+                    <ion-icon
+                      class="received__icon-info"
+                      name="information-outline"
+                    ></ion-icon>
+                  </a>
+                </div>
+
+                <div class="received__file-download">
+                  <ion-icon
+                    class="received__icon-download"
+                    name="download-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+            </div>
+
+            <!-- RECEIVED MESSAGES -->
+            <div class="received__messages u-margin-top-sm">
+              <div class="received__message">
+                <p class="received__message--text">hi, how are you doing ?</p>
+              </div>
+
+              <div class="received__message--sent">
+                <p class="received__message--sent--text">hi, i am fine.</p>
+              </div>
+            </div>
+
+            <!-- MESSAGE FORM -->
+            <div class="send__form send__form--message">
+              <form action="#" class="form-received">
+                <div class="form-received__all-boxes">
+                  <div class="form__boxes">
+                    <label
+                      for="userName-message-send"
+                      class="form-received__label"
+                      >&gt; Username</label
+                    >
+                    <input
+                      type="text"
+                      class="form-received__input form-received__sender"
+                      id="userName-message-send"
+                    />
+                    <p
+                      class="form-received__check-user form-received__check-user--1"
+                    >
+                      &check;
+                    </p>
+                  </div>
+
+                  <div class="form__boxes">
+                    <label for="userName-message" class="form-received__label"
+                      >&gt; Send to</label
+                    >
+                    <input
+                      type="text"
+                      class="form-received__input form--received__username"
+                      id="userName-message"
+                    />
+                    <p class="form-received__check-user">&check;</p>
+                  </div>
+
+                  <div class="form__boxes form__boxes--message">
+                    <label for="Message-message" class="form-received__label"
+                      >&gt; message</label
+                    >
+                    <input
+                      type="text"
+                      class="form-received__input form-received__message"
+                      id="Message-message"
+                    />
+                  </div>
+                </div>
+
+                <button class="message-send-btn">send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS CARD -->
+    <section
+      class="section-file-details section-file-details--relative u-display-hide"
+    >
+      <div class="file-details">
+        <h3 class="file-details__text">File details</h3>
+
+        <div class="file-details__details">
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; Sent By</p>
+            <p class="file-details__detail--sub">anonymous</p>
+          </div>
+
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; file name</p>
+            <p class="file-details__detail--sub">file one</p>
+          </div>
+
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; file location</p>
+            <p class="file-details__detail--sub">root</p>
+          </div>
+
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; file size</p>
+            <p class="file-details__detail--sub">10 MB</p>
+          </div>
+
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; file Type</p>
+            <p class="file-details__detail--sub file-details__detail--sub-type">
+              .jpeg
+            </p>
+          </div>
+
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; compression type</p>
+            <p
+              class="file-details__detail--sub file-details__detail--sub-compression"
+            >
+              zip
+            </p>
+          </div>
+
+          <div class="file-details__detail">
+            <p class="file-details__detail--head">&gt; message</p>
+            <p class="file-details__detail--sub">this is the first file.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN PAGE -->
+    <section class="section-main-overview section-main-overview__relative">
+      <div class="main-box-overview">
+        <h2 class="main-box-overview__head">FileSharer</h2>
+        <p class="main-box-overview__sub">
+          Share files and messages easily with FileSharer.
+        </p>
+        <a href="#" class="main-box-overview__link"
+          >Start sharing Files and messages</a
+        >
+      </div>
+    </section>
+  </body>
+</html>

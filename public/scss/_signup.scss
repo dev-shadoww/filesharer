@@ -1,0 +1,102 @@
+.section-signUp__relative {
+  position: relative;
+}
+
+.signUp {
+  background-color: $color-white;
+  display: inline-block;
+  padding: 4rem;
+  border: 2px solid rgba($color-black, 0.2);
+  border-radius: 11px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &__text {
+    display: inline-block;
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-bottom: 2px solid $color-green-var-3;
+  }
+
+  &__submit {
+    border: 0;
+    border: 1.4px solid rgba($color-blue-var-dark-1, 0.8);
+    border-radius: 2px;
+    color: $color-white;
+
+    box-shadow: 0 0.4rem 0.2rem rgba($color-black, 0.2);
+
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    padding: 0 2rem;
+    border-radius: 55px;
+    background-color: $color-blue-var-dark-1;
+
+    margin-top: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+  }
+
+  &__account {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+}
+
+.form-signUp {
+  margin-top: 1rem;
+
+  &__label {
+    display: block;
+    margin-top: 0.6rem;
+    color: rgba($color-blue-var-dark-1, 0.98);
+
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__input {
+    margin-top: 0.6rem;
+    padding: 0.4rem 0 0.4rem 0.8rem;
+    color: $color-blue-var-dark-1;
+    width: 80%;
+
+    border: 0;
+    border: 1.8px solid rgba($color-blue-var-dark-1, 0.8);
+    border-radius: 55px;
+    font-family: 'Roboto Mono', monospace;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.login {
+  &__link {
+    text-decoration: none;
+    color: $color-green-var-3;
+  }
+}
+
+.section-signUp {
+  width: 100vw;
+  height: 102vh;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: linear-gradient(
+    to bottom right,
+    rgba($color-black, 0.4),
+    rgba($color-black, 0.4)
+  );
+}

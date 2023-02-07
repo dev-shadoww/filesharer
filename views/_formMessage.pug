@@ -1,0 +1,18 @@
+form.form-received(action='#')
+  .form-received__all-boxes
+    .form__boxes
+      label.form-received__label(for='userName-message-send') &gt; username
+      input.form-received__input.form-received__sender(type='text' id='userName-message-send')
+      p.form__check-user.form__check-user--1 &check;
+
+    .form__boxes
+      label.form-received__label(for='userName-message') &gt; Send to
+      input.form-received__input.form-received__username(type='text' id='userName-message')
+      p.form__check-user &check;
+
+    .form__boxes.form__boxes--message
+      label.form-received__label(for='Message-message') &gt; message
+      input.form-received__input.form-received__message(type='text' id='Message-message')
+
+    //- button.send-btn send
+  button.message-send-btn  send

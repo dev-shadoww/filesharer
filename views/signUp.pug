@@ -1,0 +1,23 @@
+extends base
+
+block signUp_content
+  section.section-signUp.section-signUp__relative
+    div.signUp
+      h2.signUp__text sign up
+      form.form-signUp(action='#')
+        .form-signUp__boxes
+          label.form-signUp__label(for='username') username
+          input.form-signUp__input.form-signUp__input--username(type='text' id='username' required)
+
+        .form-signUp__boxes
+          label.form-signUp__label(for='email') email
+          input.form-signUp__input.form-signUp__input--email(type='email' id='email' required)
+
+        .form-signUp__boxes
+          label.form-signUp__label(for='password') password
+          input.form-signUp__input.form-signUp__input--password(type='password' id='password' required)
+
+        button.signUp__submit sign up
+
+      p.signUp__account already have an account? 
+        a.login__link(href='/login') log in

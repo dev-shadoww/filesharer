@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    script(defer type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js')
+    script(defer nomodule src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js')
+    link(href='https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Sofia+Sans:wght@300;400;500;600;700&display=swap' rel='stylesheet')
+
+    link(rel='stylesheet' href='/css/style.css')
+    title FileShare &mdash; Share anything
+  
+  body
+    header.header
+      h3.header__head-text FileSharer
+
+      nav.nav
+        ul.nav__ul
+          li.nav__li
+            a.nav__link(href=`/`) Home
+          li.nav__li
+            a.nav__link(href='/how-it-works') How it works ?
+          li.nav__li
+            a.nav__link(href='/signUp') Sign in
+
+    section.how-it-works-section
+      .how-it-works
+        h2.how-it-works__text-head What is FileSharer ?
+        p.how-it-works__text-sub FileSharer is a web application created for sharing files, and messages across the web.
+
+        h2.how-it-works__text-head How it works ?
+        p.how-it-works__text-sub FileSharer uses a NoSql DBMS that is mongoDB to store all the files and messages, whenever a user logs in all the files related to that user are fetched from the database and rendered on the screen.
+
+        h2.how-it-works__text-head Tech Stack ?
+        p.how-it-works__text-sub.u-margin-bottom-md FileSharer is built with,
+
+        img.how-it-works__img(src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="html5")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="css3")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="js")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="nodejs")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="mongodb")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" alt="express")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="linux")
+
+        img.how-it-works__img(src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white" alt="arch linux")
